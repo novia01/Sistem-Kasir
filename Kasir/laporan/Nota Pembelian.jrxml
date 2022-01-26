@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Nota Pembelian" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="beea2ef4-877a-43c6-9208-8eb6872fa475">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Kasir Report"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT id_pembelian, kode_barang, barang.nama_barang, jumlah, total, tanggal 
+FROM pembelian, barang 
+WHERE kode_barang = barang.id_barang]]>
+	</queryString>
+	<field name="id_pembelian" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="id_pembelian"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pembelian"/>
+	</field>
+	<field name="kode_barang" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="kode_barang"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pembelian"/>
+	</field>
+	<field name="nama_barang" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="nama_barang"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="barang"/>
+	</field>
+	<field name="jumlah" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="jumlah"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pembelian"/>
+	</field>
+	<field name="total" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="total"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pembelian"/>
+	</field>
+	<field name="tanggal" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="tanggal"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pembelian"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="-21" y="-1" width="840" height="80" uuid="a998dd40-db3b-465f-85af-79e749156deb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="37" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Toko Sumber Rejeki]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="30" uuid="69c8e996-4f56-4838-8911-e675611b4f0b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4fd369a9-2d0f-479b-907b-f5b272bbecba"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="22"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="0" width="119" height="30" uuid="21da129c-4c4f-4481-be63-66f3d08b21e2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="de946e14-5369-4fde-b009-f8cdf5c887bf"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="22"/>
+				</textElement>
+				<text><![CDATA[Kode Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="0" width="130" height="30" uuid="742b6892-86f2-4632-9509-ae4297a3abde">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="99eef52c-56a7-443a-977b-dee931058f4c"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="22"/>
+				</textElement>
+				<text><![CDATA[Nama Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="510" y="0" width="100" height="30" uuid="aa5613fa-c1c3-44a4-846f-a5808e8bfc2a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9802d930-bf43-43d9-a28c-1572f4b7d6c5"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="22"/>
+				</textElement>
+				<text><![CDATA[Jumlah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="630" y="0" width="70" height="30" uuid="bb7e3cd9-d16c-4761-bb72-c93aaed36b33">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6b565004-4471-47cb-bfc7-e49aa1f66995"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="22"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="710" y="0" width="100" height="30" uuid="ad0c8393-0067-4d7e-8581-520ae9995cde">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d3bfc891-f9af-40ec-9dec-f72b63e0e601"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="22"/>
+				</textElement>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="66" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="20" width="100" height="30" uuid="0ff980c8-eadf-40e9-9b30-8a31b2db265b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4fd369a9-2d0f-479b-907b-f5b272bbecba"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{id_pembelian}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="20" width="120" height="30" uuid="e57e1824-5ede-412c-84a1-54019fc2a880">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="de946e14-5369-4fde-b009-f8cdf5c887bf"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{kode_barang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="20" width="200" height="30" uuid="4eb7bdf4-d1c9-4825-942f-54ec98a16a9e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="99eef52c-56a7-443a-977b-dee931058f4c"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{nama_barang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="20" width="100" height="30" uuid="58f7052e-e053-409e-bbae-cd08f1ccae58">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9802d930-bf43-43d9-a28c-1572f4b7d6c5"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{jumlah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="630" y="20" width="70" height="30" uuid="d5fe77bd-8a71-4b56-bec4-eb9fcdb2846a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6b565004-4471-47cb-bfc7-e49aa1f66995"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="710" y="20" width="100" height="30" uuid="b76e6725-b9c3-455a-828b-21a4124a0d92">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d3bfc891-f9af-40ec-9dec-f72b63e0e601"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{tanggal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_Landscape" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="599e5132-cd67-4e88-a2e0-4d7f07ef475c">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Kasir Report"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM barang]]>
+	</queryString>
+	<field name="id_barang" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="id_barang"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="barang"/>
+	</field>
+	<field name="nama_barang" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="nama_barang"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="barang"/>
+	</field>
+	<field name="stok" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="stok"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="barang"/>
+	</field>
+	<field name="harga_pokok" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="harga_pokok"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="barang"/>
+	</field>
+	<field name="harga_jual" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="harga_jual"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="barang"/>
+	</field>
+	<field name="ppn" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="ppn"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="barang"/>
+	</field>
+	<field name="diskon" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="diskon"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="barang"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="82" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-20" y="1" width="842" height="81" backcolor="#A0E609" uuid="fa79192d-cc1b-46a6-8486-0521f8d96855"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="300" y="20" width="261" height="31" uuid="7f09368e-79c9-4144-be49-0199528223d0"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Toko Sumber Rejeki]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement x="260" y="10" width="341" height="29" uuid="11a3403a-8099-4464-9ed3-895d9b172027"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Daftar Barang]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="66" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-20" y="0" width="842" height="66" backcolor="#2350D9" uuid="0e80dd16-2507-410c-b15b-150741b5edb7"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="30" uuid="5add2b35-2eb8-43f1-9a92-5fc66f18ebf5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4944197e-fdd9-4ee1-b541-35d798c28af4"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Kode Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="0" width="100" height="30" uuid="4cd5317a-4150-40d9-8b30-bf965f838b64">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bbe17996-e660-4937-8727-9fe98ecb56a9"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nama Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="0" width="100" height="30" uuid="8e8be06f-f369-4cd7-a786-c475c7bcdae6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="99526fc1-a951-486d-912b-160a5fedacc2"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Stok]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="0" width="100" height="30" uuid="869cc1ff-cae4-4f4d-b41b-c09b824ca062">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1069081f-1f24-4efd-9e96-0b8cfc567fea"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Harga Pokok]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="510" y="0" width="100" height="30" uuid="54d5d0dd-c0bc-4bd4-ab3d-56135bfecd5f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c9d0d570-5244-4a18-8ffd-725254c76748"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Harga Jual]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="630" y="0" width="100" height="30" uuid="a3bea47b-4283-43c8-bdd8-a3c3afc16cc3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b9fb1947-b2d6-4a47-9a91-b6910a64d1c8"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[PPN (%)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="730" y="0" width="92" height="30" uuid="80797c7d-6785-45a7-b4b2-00620e9399c2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="13521677-9c58-4cb9-890c-5cf9ab59012c"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Diskon (%)]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="73" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="30" width="100" height="20" uuid="0e776abc-d1c8-40cb-a086-9b0c26b8cdc0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4944197e-fdd9-4ee1-b541-35d798c28af4"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{id_barang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="30" width="100" height="30" uuid="817b8876-e078-4dd4-a0b6-d1a56c3e1a84">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bbe17996-e660-4937-8727-9fe98ecb56a9"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nama_barang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="30" width="100" height="30" uuid="675eb977-beae-4c7f-843c-dd5fe8f945ee">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="99526fc1-a951-486d-912b-160a5fedacc2"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{stok}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="30" width="100" height="30" uuid="067cb7f2-d964-411e-9c6d-1407dfe41808">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1069081f-1f24-4efd-9e96-0b8cfc567fea"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{harga_pokok}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="30" width="100" height="30" uuid="ccd167b6-809b-4a3f-93ba-1a973c92b796">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c9d0d570-5244-4a18-8ffd-725254c76748"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{harga_jual}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="630" y="30" width="100" height="30" uuid="777ae90d-0f55-4677-8be4-e19d772e5882">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b9fb1947-b2d6-4a47-9a91-b6910a64d1c8"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{ppn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="740" y="30" width="70" height="30" uuid="e85c672b-f56d-4512-b638-a3acde3b78cd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="13521677-9c58-4cb9-890c-5cf9ab59012c"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{diskon}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
